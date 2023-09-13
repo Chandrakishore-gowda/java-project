@@ -17,7 +17,7 @@ public class pdf { private static void doReadWriteTextFile() {
 
         while ((inLine = inputStream.readLine()) != null) {
 
-            sb.append(inLine);
+            sb.append(inLine+"\n");
         }
 
         Document document = new Document();
