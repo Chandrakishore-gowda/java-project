@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>ResumeBuilder.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ff6188;}
+.s1 { color: #fcfcfa;}
+.s2 { color: #939293;}
+.s3 { color: #727072; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#2d2a2e">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ResumeBuilder.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com</span><span class="s2">.</span><span class="s1">company</span><span class="s2">;</span>
+
+<span class="s3">//Resume Builder Class: Sets the values of attributes by initializing the instance of resume class.</span>
+
+<span class="s0">public class </span><span class="s1">ResumeBuilder </span><span class="s2">{</span>
+
+    <span class="s0">private </span><span class="s1">Resume resume</span><span class="s2">;</span>
+
+
+    <span class="s1">ResumeBuilder</span><span class="s2">(){</span>
+        <span class="s1">resume </span><span class="s0">= new </span><span class="s1">Resume</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setName</span><span class="s2">(</span><span class="s1">String name</span><span class="s2">) { </span><span class="s3">// sets name</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">name </span><span class="s0">= </span><span class="s1">name</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setAge</span><span class="s2">(</span><span class="s1">String age</span><span class="s2">) { </span><span class="s3">//sets age</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">age </span><span class="s0">= </span><span class="s1">age</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setAbout</span><span class="s2">(</span><span class="s1">String about</span><span class="s2">) { </span><span class="s3">// sets about-me</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">about </span><span class="s0">= </span><span class="s1">about</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setDOB</span><span class="s2">(</span><span class="s1">String dob</span><span class="s2">) { </span><span class="s3">// sets Date of Birth</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">dob </span><span class="s0">= </span><span class="s1">dob</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setContactNo</span><span class="s2">(</span><span class="s1">String contactNo</span><span class="s2">) { </span><span class="s3">// sets contact number</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">contactNo </span><span class="s0">= </span><span class="s1">contactNo</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setLinkedInProfile</span><span class="s2">(</span><span class="s1">String linkedInProfile</span><span class="s2">) { </span><span class="s3">// sets LinkedInProfile</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">linkedInprofile </span><span class="s0">= </span><span class="s1">linkedInProfile</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setHSCResult</span><span class="s2">(</span><span class="s1">String hscResult</span><span class="s2">) { </span><span class="s3">// sets HSC result</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">hscResult </span><span class="s0">= </span><span class="s1">hscResult</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setSSCResult</span><span class="s2">(</span><span class="s1">String sscResult</span><span class="s2">) { </span><span class="s3">// sets SSC Result</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">sscResult </span><span class="s0">= </span><span class="s1">sscResult</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setDegreeResult</span><span class="s2">(</span><span class="s1">String degreeResult</span><span class="s2">) { </span><span class="s3">// sets Degree Result</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">degreeResult </span><span class="s0">= </span><span class="s1">degreeResult</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setHobbies</span><span class="s2">(</span><span class="s1">String hobbies</span><span class="s2">) { </span><span class="s3">// sets Hobbies</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">hobbies </span><span class="s0">= </span><span class="s1">hobbies</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setInterests</span><span class="s2">(</span><span class="s1">String interests</span><span class="s2">) { </span><span class="s3">// sets Interests</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">interests </span><span class="s0">= </span><span class="s1">interests</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setSkills</span><span class="s2">(</span><span class="s1">String skills</span><span class="s2">) { </span><span class="s3">// sets skills</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">skills </span><span class="s0">= </span><span class="s1">skills</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setEmail</span><span class="s2">(</span><span class="s1">String email</span><span class="s2">) { </span><span class="s3">// sets email</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">email </span><span class="s0">= </span><span class="s1">email</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setExperience</span><span class="s2">(</span><span class="s1">String experience</span><span class="s2">) { </span><span class="s3">// sets Experiencce</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">experience </span><span class="s0">= </span><span class="s1">experience</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setInternship</span><span class="s2">(</span><span class="s1">String internship</span><span class="s2">) { </span><span class="s3">// sets Internship details</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">internship </span><span class="s0">= </span><span class="s1">internship</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">ResumeBuilder setLangProficiency</span><span class="s2">(</span><span class="s1">String langProficiency</span><span class="s2">) { </span><span class="s3">// sets Language proficiency</span>
+        <span class="s1">resume</span><span class="s2">.</span><span class="s1">langProficiency </span><span class="s0">= </span><span class="s1">langProficiency</span><span class="s2">;</span>
+        <span class="s0">return this</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">Resume getResume</span><span class="s2">(){</span>
+        <span class="s0">return </span><span class="s1">resume</span><span class="s2">;</span>
+    <span class="s2">} </span><span class="s3">// Returns the resume object</span>
+
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
